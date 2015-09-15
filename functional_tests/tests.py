@@ -5,7 +5,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
+'''
 class NewVisitorTest(LiveServerTestCase):
 
     def setUp(self):
@@ -43,7 +43,7 @@ class NewVisitorTest(LiveServerTestCase):
         # She visits that URL - her to-do list is still there.
 
         # Satisfied, she goes back to sleep
-
+'''
 
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
