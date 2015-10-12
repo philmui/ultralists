@@ -1,0 +1,16 @@
+server {
+    listen 80;
+    server_name www.heartflow.us;
+
+    location /static {
+        alias /home/ubuntu/sites/www.heartflow.us/static;
+    }
+#    location / {
+#        proxy_pass http://localhost:8000;
+#    }
+    location / {
+        proxy_set_header Host $host;
+        proxy_pass http://unix:/tmp/ultralists-staging.www.heartflow.us.socket;
+    }
+
+}
