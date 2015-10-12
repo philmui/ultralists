@@ -22,8 +22,9 @@ class NewVisitorTest(StaticLiveServerTestCase):
             super().tearDownClass()
 
     def setUp(self):
-        #self.browser = webdriver.Firefox()
-        self.browser = webdriver.Chrome('/Users/pmui/dev/google/chromedriver')
+        self.browser = webdriver.Firefox()
+        #self.browser = webdriver.Chrome('/Users/pmui/dev/google/chromedriver')
+        #self.browser = new HtmlUnitDriver();
         self.browser.implicitly_wait(3)
 
     def tearDown(self):
